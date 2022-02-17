@@ -3,10 +3,9 @@ const root = new Vue(
         el: '#root',
 
         data:{
-            emailArray: [],
-            showElement: false
+            emailArray: []
         },
-            created(){
+            mounted(){
                 for(let i = 0; i <= 9; i++){
                     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                     .then((response) => {
@@ -14,7 +13,7 @@ const root = new Vue(
                     });     
                                
                 }
-                this.showElement=true;
+        
             }
 
     }    

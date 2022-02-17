@@ -9,9 +9,12 @@
 <body>
     <div id="root">
 
-        <ul v-show="showElement" >
-            <li v-for="email in emailArray">{{email}}</li>
-        </ul>
+        <div v-show="showElement">
+            <ul  >
+                <li v-for="email in emailArray">{{email}}</li>
+            </ul>
+        </div>
+        
     </div>
 
 
